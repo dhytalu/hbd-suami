@@ -98,12 +98,12 @@
     var { value: nama } = await swals.fire({
            title: 'Siapa nama suami aku?', input: 'text',
        });
-       if(nama && nama.length < 11){
+       if(nama == 'Bagas' && nama.length < 11){
          window.nama = nama;
          vketikhalo="Hai, " + nama + " ✨";
          mulainama();
          } else {
-           await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');inipesan();
+           await swals.fire('Ups!', 'Kamu bukan suami aku!');inipesan();
     }
   }
 
